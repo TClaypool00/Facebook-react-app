@@ -1,0 +1,57 @@
+$facebook_blue : #1877F2;
+$facbook_white : #FFFFFF;
+$facebook_grey : #F0F2F5;
+$facebook_darker_grey: #DDDFE2;
+
+body {
+    background-color: $facebook_grey;
+}
+
+#login {
+    text-align: center;
+    width: 30%;
+}
+
+.form {
+    .button {
+        background-color: $facebook_blue;
+        margin-bottom: 1%;
+        width: 100%;
+    }
+
+    input {
+        width: 93%;
+    }
+}
+
+input {
+    border: 2px solid $facebook_darker_grey;
+}
+
+input, .button {
+    display: block;
+    padding: 3%;
+    margin-bottom: 2%;
+    border-radius: 1em;
+}
+
+.button {
+    color: $facbook_white;
+    border: none;
+}
+
+.link {
+    color: $facebook_blue;
+    text-decoration: none;
+    text-align: center;
+}
+
+.green {
+    background-color: #42B72A;
+}
+
+.box {
+    background-color: $facbook_white;
+    padding: 1%;
+    border-radius: 1em;
+}

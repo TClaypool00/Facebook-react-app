@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='login' className='box'>
+      <form className='form'>
+        <input type="text" placeholder='Email' value={email} onChange={(e) =>  setEmail(e.target.value)} />
+        <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+        <button type="submit" className='button'>Log In</button>
+      </form>
+      <a className='link' href="facebook-reset">Forgot password?</a>
+      <hr />
+      <button className='button green'>Create new account</button>
     </div>
   );
 }
